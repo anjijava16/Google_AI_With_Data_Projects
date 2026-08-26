@@ -85,6 +85,21 @@ terraform apply \
 
 ## 3. Build & push the image
 
+> **First time only:** grant the Cloud Build service account permission to run
+> builds. Newer projects use the Compute Engine default service account, which
+> needs the Cloud Build builder role — otherwise `gcloud builds submit` fails
+> with a `403 storage.objects.get denied` error.
+>
+> ```bash
+> export PROJECT_ID="project-52e8c95d-822f-4563-a7e"
+> export PROJECT_NUMBER=$(gcloud projects describe "$PROJECT_ID" --format='value(projectNumber)')
+>
+> # Give the Compute Engine default SA the Cloud Build builder role
+> gcloud projects add-iam-policy-binding "$PROJECT_ID" \
+>   --member="serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com" \
+>   --role="roles/cloudbuild.builds.builder"
+> ```
+
 **Option A — Cloud Build (no local Docker needed):**
 
 ```bash

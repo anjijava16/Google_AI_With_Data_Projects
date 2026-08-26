@@ -1,0 +1,26 @@
+# Keep Cloud Build uploads small — exclude everything not needed to build the image.
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Terraform (providers, state, plans)
+terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Local assets / docs not needed in the image
+images/
+README.md
+
+# VCS / OS / editor
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.idea/
