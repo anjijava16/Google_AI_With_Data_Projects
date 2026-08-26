@@ -33,8 +33,7 @@ override.tf.json
 terraform.rc
 
 # ---- Infra folders (do not push) ----
-infra/bigquery-terraform/
-infra/gcp-storage-terraform/
+
 
 # ---- OS / editor ----
 .DS_Store
