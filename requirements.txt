@@ -1,0 +1,6 @@
+google-genai
+google-adk
+google-cloud-storage
+google-cloud-bigquery
+mcp[dev]
+google-adk[agent-identity]

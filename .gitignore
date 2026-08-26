@@ -1,0 +1,43 @@
+# ---- Python ----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Environment / secrets ----
+.env
+*.env
+*.key
+*.json.key
+service-account*.json
+credentials*.json
+
+# ---- Terraform ----
+**/.terraform/
+**/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ---- Infra folders (do not push) ----
+infra/bigquery-terraform/
+infra/gcp-storage-terraform/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
