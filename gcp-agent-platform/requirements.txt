@@ -1,0 +1,25 @@
+# Core platform SDK. The [agent_engines,adk] extras pull in ADK and the
+# Agent Runtime deployment path. Pin the floor — the 2026 client surface
+# (vertexai.Client, agentplatform.Client) is not in older releases.
+google-cloud-aiplatform[agent_engines,adk]>=1.112
+
+google-genai>=1.0.0
+google-cloud-storage>=2.18
+google-cloud-bigquery>=3.25
+google-cloud-documentai>=2.29
+google-cloud-pubsub>=2.23
+
+# serving
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic>=2.9
+
+# tools / protocols
+mcp>=1.2
+
+# document extraction (heavy — see Dockerfile note on image size)
+docling>=2.0
+
+# observability
+opentelemetry-sdk>=1.27
+opentelemetry-exporter-gcp-trace>=1.7

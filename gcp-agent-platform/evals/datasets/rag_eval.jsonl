@@ -1,0 +1,4 @@
+{"question": "What is the termination notice period in the Acme master services agreement?", "expected_answer": "Either party may terminate for convenience with 60 days written notice.", "expected_sources": ["gs://REPLACE-raw/contracts/acme-msa-2024.pdf"]}
+{"question": "Which contracts include an auto-renewal clause?", "expected_answer": "The Acme MSA and the Globex SOW both auto-renew for successive 12-month terms.", "expected_sources": ["gs://REPLACE-raw/contracts/acme-msa-2024.pdf", "gs://REPLACE-raw/contracts/globex-sow-2025.pdf"]}
+{"question": "What is the liability cap in the Globex statement of work?", "expected_answer": "Liability is capped at fees paid in the preceding 12 months.", "expected_sources": ["gs://REPLACE-raw/contracts/globex-sow-2025.pdf"]}
+{"question": "Who is the designated data protection contact for Initech?", "expected_answer": "Not stated in the corpus.", "expected_sources": []}

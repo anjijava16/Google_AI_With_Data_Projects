@@ -1,0 +1,9 @@
+# Slim dependency set for Agent Runtime deployment.
+# Deliberately excludes docling, FastAPI and uvicorn: the managed runtime
+# provides the serving layer, and docling would add ~1GB for no benefit since
+# extraction runs in the ingestion job, not in the agent.
+google-cloud-aiplatform[agent_engines,adk]>=1.112
+google-genai>=1.0.0
+google-cloud-bigquery>=3.25
+google-cloud-storage>=2.18
+google-cloud-pubsub>=2.23

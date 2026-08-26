@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+# Never commit these. A service account key is a permanent, unrotatable
+# credential — use Workload Identity Federation instead.
+*-key.json
+service-account*.json
